@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZERO_TRACE v3.0 // Enterprise Incident Response</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="terminal-container" id="terminal">
+    <header class="terminal-header">
+      <div class="title">ZERO_TRACE v3.0 // SOC_COMMAND</div>
+      <div class="status-group">
+        <span>HOST: <strong id="host-label">workstation</strong></span>
+        <span>PIVOTS: <strong id="pivot-count">1/4</strong></span>
+        <span class="timer-box">LOCKOUT: <strong id="timer">420.0s</strong></span>
+      </div>
+    </header>
+
+    <div class="cheat-sheet">
+      <span>MACROS:</span>
+      <code>help</code>
+      <code>map</code>
+      <code>ls</code>
+      <code>cat</code>
+      <code>grep</code>
+      <code>nmap</code>
+      <code>ps</code>
+      <code>kill</code>
+      <code>ufw</code>
+      <code>ssh</code>
+      <code>decode</code>
+      <code>hex2ascii</code>
+      <code>hint</code>
+      <code>override</code>
+      <code>clear</code>
+    </div>
+
+    <main class="terminal-output" id="output"></main>
+
+    <form class="terminal-input-row" id="command-form">
+      <span class="prompt" id="prompt-label">analyst@workstation:~$</span>
+      <input 
+        type="text" 
+        id="command-input" 
+        autocomplete="off" 
+        spellcheck="false" 
+        placeholder="Enter command..."
+      >
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
