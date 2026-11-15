@@ -7,7 +7,7 @@ const pivotCountEl = document.getElementById('pivot-count');
 const promptLabelEl = document.getElementById('prompt-label');
 const terminalEl = document.getElementById('terminal');
 
-let timeLeft = 700.0;
+let timeLeft = 500.0;
 let gameOver = false;
 let timerInterval = null;
 let currentHost = 'workstation';
